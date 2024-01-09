@@ -1,0 +1,46 @@
+.header_main{
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #EAEBEB66;
+    padding: 0;
+}
+
+.header_main .navbar-brand img{
+    width: 190px;
+    height: 100%;
+}
+
+.header_main .navbar-nav .nav-link{
+    color: #F9F9F9;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.header_main .navbar-nav{
+    gap: 15px;
+    align-items: center;
+}
+
+.header_main .header_search svg{
+    color: #F9F9F9;
+    font-size: 20px;
+}
+
+.header_main .header_search{
+    border-left: 1px solid #EAEBEB66;
+    border-right: 1px solid #EAEBEB66;
+    padding: 22px 20px;
+}
+
+.header_main .header_contact_us button{
+    background-color: transparent;
+    color: #F9F9F9;
+    border: 1px solid #F9F9F9;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 15px;
+    border-radius: 100px;
+}
