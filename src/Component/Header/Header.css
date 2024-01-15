@@ -3,11 +3,31 @@
     width: 100%;
     border-bottom: 1px solid #EAEBEB66;
     padding: 0;
+    z-index: 5;
+    transition: background-color 0.3s ease;
 }
+
+.header_main.black_main{
+    border-bottom: 1px solid #000;
+}
+
+.header_main.scrolled {
+    background-color: #000;
+  }
+
+  .header_main.black_main.scrolled{
+    background-color: #fff;
+  }
 
 .header_main .navbar-brand img{
     width: 190px;
     height: 100%;
+    cursor: pointer;
+}
+
+.header_main.black_main .navbar-nav .nav-link{
+    color: #000;
+    font-weight: 500;
 }
 
 .header_main .navbar-nav .nav-link{
@@ -26,12 +46,18 @@
 .header_main .header_search svg{
     color: #F9F9F9;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .header_main .header_search{
     border-left: 1px solid #EAEBEB66;
     border-right: 1px solid #EAEBEB66;
     padding: 22px 20px;
+}
+
+.header_main.black_main .header_search{
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
 }
 
 .header_main .header_contact_us button{
@@ -43,4 +69,10 @@
     gap: 6px;
     padding: 6px 15px;
     border-radius: 100px;
+}
+
+.header_main.black_main .header_contact_us button{
+    border: 1px solid #000;
+    color: #000;
+    font-weight: 600;
 }

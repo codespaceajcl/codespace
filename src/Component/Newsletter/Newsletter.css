@@ -1,0 +1,43 @@
+.newsletter_main{
+    padding: 50px 0;
+}
+
+.newsletter_main .container{
+    text-align: center;
+}
+
+.newsletter_main .container h1{
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.newsletter_main .container p{
+    max-width: 560px;
+    margin: 18px auto;
+    font-size: 19px;
+}
+
+.newsletter_main .submit_div{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    background-color: #F0F1F2;
+    padding: 6px;
+    border-radius: 100px;
+}
+
+.newsletter_main .submit_div input{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.newsletter_main .submit_div button{
+    background-color: #A9C23F;
+    border: none;
+    color: #fff;
+    padding: 7px 35px;
+    border-radius: 100px;
+}

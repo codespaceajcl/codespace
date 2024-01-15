@@ -1,0 +1,92 @@
+.footer_main{
+    background-image: url('/public/images/footer_bg.png');
+    background-size: cover;
+    padding-top: 45px;
+    border-bottom: 1px solid #DFDFE0;
+    padding-bottom: 25px;
+}
+
+.footer_main img{
+    width: 230px;
+}
+
+.footer_main p{
+    color: #fff;
+    margin: 25px 0;
+    max-width: 550px;
+}
+
+.footer_main h6{
+    color: #A9C23F;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer_main ul{
+    color: #fff;
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.footer_main ul li {
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+
+.personal_info{
+    display: flex;
+    gap: 45px;
+    margin-top: 45px;
+}
+
+.personal_info .phone{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.personal_info .phone img{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.personal_info .phone h4{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+
+.personal_info .phone h5{
+    color: #fff;
+    font-size: 17px;
+}
+
+.copy_rights{
+    background-image: url('/public/images/footer_bg.png');
+    background-size: cover;
+    padding: 20px 0;
+}
+
+.copy_rights .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy_rights p{
+    color: #fff;
+}
+
+.copy_rights .container div{
+    display: flex;
+    gap: 20px;
+}
+
+.copy_rights .container div img{
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}

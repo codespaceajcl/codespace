@@ -1,0 +1,70 @@
+.industry_main .industry_banner {
+  background-image: url("/public/images/industry_banner_bg.png");
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 90px;
+  color: #fff;
+}
+
+.industry_main .industry_banner h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.industry_main .industry_banner h1 span{
+    color: #A9C23F;
+}
+
+.industry_main .industry_banner p{
+    font-size: 22px;
+    margin: 30px 0;
+}
+
+.industry_main .innovation{
+    padding: 45px 0;
+    background: #F2F7F5;
+}
+
+.industry_main .innovation h2{
+    color: #131415;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.industry_main .innovation p{
+    font-size: 20px;
+    margin: 20px 0;
+    color: #787878;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+
+.industry_main .innovation .innovation_box{
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.industry_main .innovation .innovation_box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000073;
+}
+
+.industry_main .innovation .innovation_box h3{
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+    bottom: 20px;
+    left: 20px;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.about_help.schedule_consult{
+    background-image: url('/public/images/consult.jpg');
+}

@@ -1,0 +1,144 @@
+.financial_banner {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+
+.financial_banner h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #131415;
+  margin: 20px 0;
+}
+
+.data_driven h4 {
+  color: #131415;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.data_driven ul {
+  padding-left: 18px;
+}
+
+.data_driven ul li {
+  font-size: 22px;
+  margin-top: 17px;
+}
+
+.data_driven ul li span {
+  font-weight: 700;
+}
+
+.data_driven p {
+  color: #787878;
+  font-size: 20px;
+  margin-bottom: 35px;
+  margin-top: 30px;
+}
+
+.financial_detail {
+  background: #d5e3f0;
+  padding: 55px 0;
+}
+
+.financial_detail h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #131415;
+}
+
+.financial_detail .detail_box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.financial_detail .detail_box div {
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 15px;
+}
+
+.financial_detail .detail_box div svg {
+  width: 50px;
+  height: 50px;
+}
+
+.financial_detail .detail_box h6 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+.about_help.financial_consult{
+    background-image: url('/public/images/financial_consult.jpg');
+}
+
+.insurance_detail{
+    background: #222;
+    color: #fff;
+}
+
+.insurance_detail h2{
+    color: #fff;
+}
+
+.insurance_consult{
+    background-image: url('/public/images/insurance_consult.jpg');
+}
+
+.healthcare_detail{
+    background: #003366;
+    color: #fff;
+}
+
+.healthcare_detail h2{
+    color: #fff;
+}
+
+.healthcare_consult{
+    background-image: url('/public/images/healthcare_consult.jpg');
+}
+
+.realestate_detail{
+    background-color: #0A2133;
+    color: #fff;
+}
+
+.realestate_detail h2{
+    color: #fff;
+}
+
+.realestate_consult{
+    background-image: url('/public/images/realestate_consult.jpg');
+}
+
+.logistics_details{
+    background: #ECEEE4;
+}
+
+.logictics_consult{
+    background-image: url('/public/images/logistics_consult.jpg');
+}
+
+.media_consult{
+    background-image: url('/public/images/media_consult.jpg');
+}
+
+.media_details{
+    background: #F2F2F2;
+}
+
+.media_details .detail_box div {
+    background-color: #000;
+}
+
+.media_details svg path{
+    fill: #fff
+}
+
+.media_consult svg{
+    fill: #fff;
+}
