@@ -19,7 +19,7 @@
 
 .about_main .about_tabs {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
-  padding: 15px 0;
+  /* padding: 15px 0; */
 }
 
 .about_main .about_tabs ul {
@@ -34,6 +34,26 @@
   color: #131415;
   font-weight: 500;
   font-size: 18px;
+  cursor: pointer;
+  padding: 15px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.about_main .about_tabs ul li a{
+  color: #131415;
+}
+
+.about_main .about_tabs ul li:hover {
+  color: #A9C23F;
+  border-bottom: 2px solid;
+}
+
+.about_main .about_tabs ul li:hover a{
+  color: #A9C23F;
+}
+
+.about_main .about_tabs ul li a:hover {
+  color: #A9C23F;
 }
 
 .about_main .our_company {
@@ -118,6 +138,16 @@
   margin: auto;
   gap: 15px;
   margin-top: 25px;
+  transition: all 0.2s ease;
+}
+
+.about_help button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.about_help button:hover svg path {
+  fill: #000;
 }
 
 .news_insights {
@@ -143,7 +173,14 @@
   padding: 20px;
   border-radius: 15px;
   margin: 18px;
+  transition: all 0.2s ease;
 }
+
+.news_insights .news_box:hover {
+  box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 71%);
+  transform: scale(1.02);
+}
+
 
 .news_insights .news_box img {
   border-radius: 10px;
@@ -154,7 +191,7 @@
   font-size: 18px;
 }
 
-.news_insights .news_box > div {
+.news_insights .news_box>div {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #000;
@@ -246,13 +283,18 @@
   position: relative;
 }
 
-.leadership .leader_box > div {
+.leadership .leader_box>div {
   background-color: #fff;
   position: absolute;
   width: 95%;
   bottom: 0;
   border: 1px solid #000;
   padding: 15px;
+  transition: all 0.2s ease;
+}
+
+.leadership .leader_box:hover>div {
+  box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 71%);
 }
 
 .leadership .leader_box h3 {
@@ -344,23 +386,179 @@
   border: 1px solid #000;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
   padding: 45px 35px;
+  transition: all 0.2s ease;
 }
 
-.core_values .value_box img{
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
+.core_values .value_box:hover {
+  box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 71%);
+  transform: scale(1.02);
 }
 
-.core_values .value_box h3{
+.core_values .value_box img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.core_values .value_box h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #131415;
+  margin: 15px 0;
+}
+
+.core_values .value_box h6 {
+  color: #787878;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+@media (max-width: 992px) {
+  .leadership .slick-slider .slick-next{
+    right: -3%;
+  }
+
+  .news_insights .slick-slider .slick-next{
+    right: -3%;
+  }
+
+  .personal_info{
+    flex-direction: column;
+  }
+
+  .about_main .about_banner h1{
+    font-size: 38px;
+  }
+
+  .about_main .about_banner p{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about_main .about_banner h1 {
+    font-size: 27px;
+  }
+
+  .about_main .about_banner p {
+    font-size: 15px;
+  }
+
+  .about_main .about_tabs {
+    padding: 0;
+  }
+
+  .about_main .about_tabs ul {
+    gap: 0 15px;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding: 12px 0;
+  }
+
+  .about_main .about_tabs ul li {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  .our_company h1 {
+    text-align: center;
     font-weight: 600;
-    font-size: 26px;
-    color: #131415;
-    margin: 15px 0;
-}
+    font-size: 25px;
+  }
 
-.core_values .value_box h6{
-    color: #787878;
-    font-weight: 400;
-    line-height: 1.4;
+  .about_main .our_company p {
+    font-size: 15px;
+  }
+
+  .about_main .our_company ul li {
+    font-size: 15px;
+  }
+
+  .core_values h2 {
+    font-size: 26px;
+  }
+
+  .core_values p {
+    font-size: 16px;
+  }
+
+  .core_values .value_box {
+    margin-bottom: 20px;
+    padding: 20px 25px;
+  }
+
+  .core_values .value_box img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .core_values .value_box h3 {
+    font-size: 22px;
+  }
+
+  .leadership h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .leadership h6 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .leadership .slick-slider .slick-next {
+    left: auto;
+    top: auto;
+    right: 36%;
+    bottom: -15%;
+  }
+
+  .leadership .slick-slider .slick-prev {
+    left: auto;
+    top: auto;
+    right: 52%;
+    bottom: -15%;
+  }
+
+  .leadership {
+    padding: 30px 0 70px 0;
+  }
+
+  .news_insights .slick-slider .slick-next {
+    left: auto;
+    top: auto;
+    right: 36%;
+    bottom: -15%;
+  }
+
+  .news_insights .slick-slider .slick-prev {
+    left: auto;
+    top: auto;
+    right: 52%;
+    bottom: -15%;
+  }
+
+  .news_insights {
+    padding: 50px 0 80px 0;
+  }
+
+  .news_insights h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .news_insights h6 {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .about_help .container h6{
+    font-size: 15px;
+  }
+
+  .about_help h2 {
+    font-size: 22px;
+  }
 }

@@ -43,6 +43,7 @@
     position: relative;
     margin-bottom: 20px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .industry_main .innovation .innovation_box::before{
@@ -54,6 +55,15 @@
     height: 100%;
     background-color: #00000073;
 }
+
+.industry_main .innovation .innovation_box:hover::before{
+    background-color: #0000008a;
+}
+
+.industry_main .innovation .innovation_box:hover{
+    box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 71%);
+}
+
 
 .industry_main .innovation .innovation_box h3{
     position: absolute;
@@ -67,4 +77,50 @@
 
 .about_help.schedule_consult{
     background-image: url('/public/images/consult.jpg');
+}
+
+@media (max-width: 1200px) {
+    .industry_main .industry_banner h1{
+        font-size: 45px;
+    }
+
+    .industry_main .innovation .innovation_box h3 {
+        bottom: 14px;
+        left: 12px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .industry_main .industry_banner h1{
+        font-size: 30px;
+    }
+
+    .industry_main .industry_banner p {
+        font-size: 17px;
+        margin: 15px 0;
+    }
+
+    .industry_main .industry_banner{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .industry_main .innovation h2 {
+        font-size: 24px;
+    }
+
+    .industry_main .innovation p{
+        font-size: 17px;
+    }
+
+    .industry_main .innovation .innovation_box h3 {
+        bottom: 10px;
+        left: 10px;
+        font-size: 24px;
+    }
+
+    .home_partner h5{
+        font-size: 16px;
+    }
 }

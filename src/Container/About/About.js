@@ -59,6 +59,29 @@ const About = () => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     centerPadding: "30px",
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1008,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const settings2 = {
@@ -70,6 +93,29 @@ const About = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow2 />,
     prevArrow: <SamplePrevArrow2 />,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1008,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -95,10 +141,10 @@ const About = () => {
       <div className="about_tabs">
         <Container>
           <ul>
-            <li>Our Company</li>
-            <li>Our Values</li>
-            <li>Leadership</li>
-            <li>News & Insights</li>
+            <li> <a href="#ourCompany"> Our Company </a></li>
+            <li> <a href="#coreValues"> Our Values </a></li>
+            <li> <a href="#leadership"> Leadership </a></li>
+            <li> <a href="#news"> News & Insights </a></li>
           </ul>
         </Container>
       </div>
@@ -150,7 +196,7 @@ const About = () => {
         </Container>
       </div>
 
-      <div className="core_values">
+      <div className="core_values" id="coreValues">
         <Container>
           <h2>Our Core Values</h2>
           <p>

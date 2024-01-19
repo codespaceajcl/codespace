@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Home.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { MdOutlineArrowOutward } from "react-icons/md";
@@ -8,8 +8,12 @@ import Slider from "react-slick";
 import Newsletter from "../../Component/Newsletter/Newsletter";
 import Partners from "../../Component/Partners/Partners";
 import Industries from "../../Component/Industries/Industries";
+import CountUp from 'react-countup';
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const settings = {
     dots: true,
     arrows: false,
@@ -63,7 +67,7 @@ const Home = () => {
                 <Col md={7} className="home_banner_left">
                   <h1>Journey into the tech of tomorrow</h1>
                   <p>
-                    Step into the future with our cutting-edge technology
+                    Step into the future with our cutting-edge technology <br />
                     solutions tailored for your business needs.
                   </p>
 
@@ -82,6 +86,7 @@ const Home = () => {
                   </div>
                 </Col>
                 <Col md={5} className="home_right_img">
+                  <img src="/images/cubic_img.png" alt="" />
                   {/* <Spline
                     className="spline"
                     scene="https://prod.spline.design/rAcSdllYWQWQDZLh/scene.splinecode"
@@ -94,7 +99,7 @@ const Home = () => {
                 <Col md={7} className="home_banner_left">
                   <h1>Journey into the tech of tomorrow</h1>
                   <p>
-                    Step into the future with our cutting-edge technology
+                    Step into the future with our cutting-edge technology <br />
                     solutions tailored for your business needs.
                   </p>
 
@@ -113,6 +118,7 @@ const Home = () => {
                   </div>
                 </Col>
                 <Col md={5} className="home_right_img">
+                  <img src="/images/cubic_img.png" alt="" />
                   {/* <Spline
                     className="spline"
                     scene="https://prod.spline.design/rAcSdllYWQWQDZLh/scene.splinecode"
@@ -125,25 +131,25 @@ const Home = () => {
           <div className="top_home_exp">
             <Row>
               <Col md={3}>
-                <h6>12+</h6>
+                <h6><CountUp end={12} duration={2.75} />+</h6>
                 <p>
                   Years of continual <br /> excellence
                 </p>
               </Col>
               <Col md={3}>
-                <h6>700+</h6>
+                <h6><CountUp end={700} duration={2.75} />+</h6>
                 <p>
                   Change makers driving <br /> revolution
                 </p>
               </Col>
               <Col md={3}>
-                <h6>16+</h6>
+                <h6><CountUp end={16} duration={2.75} />+</h6>
                 <p>
                   Countries with our presence <br /> and clientele
                 </p>
               </Col>
               <Col md={3}>
-                <h6>233+</h6>
+                <h6><CountUp end={233} duration={2.75} />+</h6>
                 <p>
                   Active clients across <br /> the globe
                 </p>
@@ -163,8 +169,8 @@ const Home = () => {
                     Crafting the future with our innovative tech solutions &
                     services
                   </h4>
-                  <div className="d-flex" style={{ gap: "10px" }}>
-                    <button>
+                  <div className="about_learn_btn">
+                    <button onClick={() => navigate('/about')}>
                       Learn More
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +196,7 @@ const Home = () => {
                             fill="white"
                           />
                         </g>
-                      </svg>{" "}
+                      </svg>
                     </button>
                     <button>
                       Meet The Team
@@ -253,7 +259,7 @@ const Home = () => {
           </div>
         </Container>
       </div>
-      <div className="home_services">
+      <div className="home_services" id="services">
         <Container>
           <h6>Services</h6>
           <h4>
@@ -422,30 +428,13 @@ const Home = () => {
           </div>
           <div className="box">
             <h5>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 30 30"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_353_3502)">
-                  <path d="M27.2383 12.2383C26.0228 12.2383 24.9888 13.028 24.6208 14.1211H17.6105V15.8789H24.6207C25.6526 18.8021 29.9384 18.1369 29.9999 14.9999C30 13.4772 28.7611 12.2383 27.2383 12.2383Z" />
-                  <path d="M23.4727 19.7696C23.0312 19.7696 22.614 19.8742 22.2435 20.0592L20.3285 18.1442C20.1638 17.9794 19.9402 17.8867 19.7071 17.8867H17.6106V19.6445H19.343L21.0006 21.3021C20.0766 23.0897 21.4514 25.3199 23.4727 25.2929C27.1313 25.1543 27.1306 19.9079 23.4727 19.7696Z" />
-                  <path d="M4.81945 15.8789H0C0.0964453 17.5593 0.46834 19.1876 1.09506 20.711H5.38289C5.06045 19.1738 4.86932 17.5474 4.81945 15.8789Z" />
-                  <path d="M5.38289 9.28906H1.09506C0.46834 10.8124 0.0964453 12.4407 0 14.1211H4.81945C4.86932 12.4527 5.06045 10.8262 5.38289 9.28906Z" />
-                  <path d="M9.06394 1.20557C4.83306 3.01893 2.71988 6.21 1.95892 7.53117H5.82019C6.41603 5.47529 7.42689 3.0883 9.06394 1.20557Z" />
-                  <path d="M1.95892 22.4688C2.71988 23.7899 4.83306 26.981 9.06394 28.7944C7.4266 26.9113 6.41603 24.5247 5.82019 22.4688H1.95892Z" />
-                  <path d="M14.9738 0C11.5987 0 8.99832 3.29883 7.65582 7.53123H15.8527V0.878906C15.8527 0.393516 15.4592 0 14.9738 0Z" />
-                  <path d="M14.9738 30C15.4592 30 15.8527 29.6065 15.8527 29.1211V22.4688H7.65582C9.0002 26.7071 11.6032 30 14.9738 30Z" />
-                  <path d="M6.57806 14.1211H15.8527V9.28906H7.1807C6.83605 10.8118 6.63115 12.4409 6.57806 14.1211Z" />
-                  <path d="M20.3285 11.8559L22.2435 9.94086C24.0308 10.8649 26.2614 9.49009 26.2343 7.46873C26.2343 5.94593 24.9954 4.70703 23.4726 4.70703C21.4514 4.68019 20.0762 6.9105 21.0005 8.69791L19.343 10.3555H17.6105V12.1133H19.707C19.9402 12.1133 20.1637 12.0207 20.3285 11.8559Z" />
-                  <path d="M7.1807 20.711H15.8527V15.8789H6.57806C6.63115 17.5591 6.83605 19.1882 7.1807 20.711Z" />
-                </g>
+              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="33" viewBox="0 0 31 33" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0355 17.6369C28.0071 17.6369 30.4249 15.2286 30.4249 12.2679C30.4249 9.48298 28.2422 7.1321 25.4552 6.91541C25.2453 6.899 25.0813 6.72605 25.0772 6.5155C25.0129 3.55076 22.5383 1.13904 19.5606 1.13904C18.0902 1.13904 16.7066 1.70847 15.6655 2.74207C15.5739 2.83298 15.4447 2.87537 15.3168 2.85691C15.189 2.83845 15.0776 2.76052 15.016 2.64705C14.1718 1.0946 12.5469 0.130737 10.7764 0.130737C8.11995 0.130737 5.95774 2.28406 5.95774 4.93025C5.95774 5.4238 6.03293 5.91052 6.18059 6.37742C6.21887 6.49773 6.19905 6.62898 6.12795 6.73289C6.05618 6.83679 5.94133 6.90242 5.81555 6.91062C2.98684 7.09041 0.77063 9.44402 0.77063 12.2679C0.77063 15.2286 3.1885 17.6369 6.16008 17.6369H25.0355ZM21.5997 18.4777V22.837C21.5997 23.0633 21.7829 23.2471 22.0099 23.2471H24.9616C25.1401 23.8658 25.7122 24.3204 26.389 24.3204C27.2079 24.3204 27.8738 23.6552 27.8738 22.8377C27.8738 22.0201 27.2079 21.3543 26.389 21.3543C25.7122 21.3543 25.1401 21.8082 24.9616 22.4275H22.4207V18.4784H21.5997V18.4777ZM19.1737 18.4777H19.994V27.6905C21.0706 27.8846 21.8909 28.8266 21.8909 29.9566C21.8909 31.2267 20.856 32.2596 19.5838 32.2596C18.3116 32.2596 17.2767 31.2267 17.2767 29.9566C17.2767 28.8266 18.097 27.8846 19.1737 27.6905V18.4777ZM12.1579 22.3427C10.8858 22.3427 9.85081 23.3757 9.85081 24.6458C9.85081 25.9152 10.8858 26.9488 12.1579 26.9488C13.29 26.9488 14.2333 26.1312 14.4275 25.0559H17.3669C17.5932 25.0559 17.7771 24.872 17.7771 24.6458V18.4784H16.9568V24.2356H14.4275C14.2333 23.161 13.29 22.3427 12.1579 22.3427ZM7.82258 18.4777H8.6429V27.6905C9.71956 27.8846 10.5399 28.8266 10.5399 29.9566C10.5399 31.2267 9.50491 32.2596 8.23274 32.2596C6.96057 32.2596 5.92561 31.2267 5.92561 29.9566C5.92561 28.8266 6.74524 27.8846 7.82258 27.6905V18.4777ZM5.21741 22.6558V18.4073C4.93782 18.3649 4.6637 18.3034 4.39709 18.2248V22.6558C3.77708 22.8343 3.32249 23.4051 3.32249 24.0804C3.32249 24.898 3.98899 25.5632 4.80793 25.5632C5.62688 25.5632 6.29338 24.898 6.29338 24.0804C6.2927 23.4044 5.83743 22.8336 5.21741 22.6558Z" fill="url(#paint0_linear_353_3562)" />
                 <defs>
-                  <clipPath id="clip0_353_3502">
-                    <rect width="30" height="30" />
-                  </clipPath>
+                  <linearGradient id="paint0_linear_353_3562" x1="15.5978" y1="0.130737" x2="15.5978" y2="32.2596" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
                 </defs>
               </svg>
               Cloud
@@ -477,30 +466,103 @@ const Home = () => {
           </div>
           <div className="box">
             <h5>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 30 30"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_353_3502)">
-                  <path d="M27.2383 12.2383C26.0228 12.2383 24.9888 13.028 24.6208 14.1211H17.6105V15.8789H24.6207C25.6526 18.8021 29.9384 18.1369 29.9999 14.9999C30 13.4772 28.7611 12.2383 27.2383 12.2383Z" />
-                  <path d="M23.4727 19.7696C23.0312 19.7696 22.614 19.8742 22.2435 20.0592L20.3285 18.1442C20.1638 17.9794 19.9402 17.8867 19.7071 17.8867H17.6106V19.6445H19.343L21.0006 21.3021C20.0766 23.0897 21.4514 25.3199 23.4727 25.2929C27.1313 25.1543 27.1306 19.9079 23.4727 19.7696Z" />
-                  <path d="M4.81945 15.8789H0C0.0964453 17.5593 0.46834 19.1876 1.09506 20.711H5.38289C5.06045 19.1738 4.86932 17.5474 4.81945 15.8789Z" />
-                  <path d="M5.38289 9.28906H1.09506C0.46834 10.8124 0.0964453 12.4407 0 14.1211H4.81945C4.86932 12.4527 5.06045 10.8262 5.38289 9.28906Z" />
-                  <path d="M9.06394 1.20557C4.83306 3.01893 2.71988 6.21 1.95892 7.53117H5.82019C6.41603 5.47529 7.42689 3.0883 9.06394 1.20557Z" />
-                  <path d="M1.95892 22.4688C2.71988 23.7899 4.83306 26.981 9.06394 28.7944C7.4266 26.9113 6.41603 24.5247 5.82019 22.4688H1.95892Z" />
-                  <path d="M14.9738 0C11.5987 0 8.99832 3.29883 7.65582 7.53123H15.8527V0.878906C15.8527 0.393516 15.4592 0 14.9738 0Z" />
-                  <path d="M14.9738 30C15.4592 30 15.8527 29.6065 15.8527 29.1211V22.4688H7.65582C9.0002 26.7071 11.6032 30 14.9738 30Z" />
-                  <path d="M6.57806 14.1211H15.8527V9.28906H7.1807C6.83605 10.8118 6.63115 12.4409 6.57806 14.1211Z" />
-                  <path d="M20.3285 11.8559L22.2435 9.94086C24.0308 10.8649 26.2614 9.49009 26.2343 7.46873C26.2343 5.94593 24.9954 4.70703 23.4726 4.70703C21.4514 4.68019 20.0762 6.9105 21.0005 8.69791L19.343 10.3555H17.6105V12.1133H19.707C19.9402 12.1133 20.1637 12.0207 20.3285 11.8559Z" />
-                  <path d="M7.1807 20.711H15.8527V15.8789H6.57806C6.63115 17.5591 6.83605 19.1882 7.1807 20.711Z" />
-                </g>
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.8333 3.58337C28.1433 3.58337 27.5833 3.02337 27.5833 2.33337C27.5833 1.64337 28.1433 1.08337 28.8333 1.08337H31.3333C33.865 1.08337 35.9167 3.13504 35.9167 5.66671V8.16671C35.9167 8.85671 35.3567 9.41671 34.6667 9.41671C33.9767 9.41671 33.4167 8.85671 33.4167 8.16671V5.66671C33.4167 4.51671 32.4833 3.58337 31.3333 3.58337H28.8333Z" fill="url(#paint0_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.8333 36.9168C28.1433 36.9168 27.5833 36.3568 27.5833 35.6668C27.5833 34.9768 28.1433 34.4168 28.8333 34.4168H31.3333C32.4833 34.4168 33.4167 33.4835 33.4167 32.3335V29.8335C33.4167 29.1435 33.9767 28.5835 34.6667 28.5835C35.3567 28.5835 35.9167 29.1435 35.9167 29.8335V32.3335C35.9167 34.8652 33.865 36.9168 31.3333 36.9168H28.8333Z" fill="url(#paint1_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 1.08337C7.85667 1.08337 8.41667 1.64337 8.41667 2.33337C8.41667 3.02337 7.85667 3.58337 7.16667 3.58337H4.66667C3.51667 3.58337 2.58333 4.51671 2.58333 5.66671V8.16671C2.58333 8.85671 2.02333 9.41671 1.33333 9.41671C0.643332 9.41671 0.0833321 8.85671 0.0833321 8.16671V5.66671C0.0833321 3.13504 2.135 1.08337 4.66667 1.08337H7.16667Z" fill="url(#paint2_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.16667 34.4168C7.85667 34.4168 8.41667 34.9768 8.41667 35.6668C8.41667 36.3568 7.85667 36.9168 7.16667 36.9168H4.66667C2.135 36.9168 0.0833321 34.8652 0.0833321 32.3335V29.8335C0.0833321 29.1435 0.643332 28.5835 1.33333 28.5835C2.02333 28.5835 2.58333 29.1435 2.58333 29.8335V32.3335C2.58333 33.4835 3.51667 34.4168 4.66667 34.4168H7.16667Z" fill="url(#paint3_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.9167 8.16671V13.1667C30.9167 13.7184 30.6967 14.2484 30.3067 14.64C29.915 15.03 29.3867 15.25 28.8333 15.25H7.16667C6.61333 15.25 6.085 15.03 5.69333 14.64C5.30333 14.2484 5.08333 13.7184 5.08333 13.1667V8.16671C5.08333 7.61504 5.30333 7.08504 5.69333 6.69337C6.085 6.30337 6.61333 6.08337 7.16667 6.08337H28.8333C29.3867 6.08337 29.915 6.30337 30.3067 6.69337C30.6967 7.08504 30.9167 7.61337 30.9167 8.16671Z" fill="url(#paint4_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.75 19.8333V29.8333C16.75 30.9833 15.8167 31.9167 14.6667 31.9167H7.16667C6.01667 31.9167 5.08333 30.9833 5.08333 29.8333V19.8333C5.08333 18.6833 6.01667 17.75 7.16667 17.75H14.6667C15.8167 17.75 16.75 18.6833 16.75 19.8333Z" fill="url(#paint5_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M30.9167 19.8333V29.8333C30.9167 30.9833 29.9833 31.9167 28.8333 31.9167H21.3333C20.1833 31.9167 19.25 30.9833 19.25 29.8333V19.8333C19.25 18.6833 20.1833 17.75 21.3333 17.75H28.8333C29.9833 17.75 30.9167 18.6833 30.9167 19.8333Z" fill="url(#paint6_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.4167 12.3334C33.4167 11.6434 33.9767 11.0834 34.6667 11.0834C35.3567 11.0834 35.9167 11.6434 35.9167 12.3334V14C35.9167 14.69 35.3567 15.25 34.6667 15.25C33.9767 15.25 33.4167 14.69 33.4167 14V12.3334Z" fill="url(#paint7_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 3.58337C10.6433 3.58337 10.0833 3.02337 10.0833 2.33337C10.0833 1.64337 10.6433 1.08337 11.3333 1.08337H13C13.69 1.08337 14.25 1.64337 14.25 2.33337C14.25 3.02337 13.69 3.58337 13 3.58337H11.3333Z" fill="url(#paint8_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0833321 12.3334C0.0833321 11.6434 0.643332 11.0834 1.33333 11.0834C2.02333 11.0834 2.58333 11.6434 2.58333 12.3334V14C2.58333 14.69 2.02333 15.25 1.33333 15.25C0.643332 15.25 0.0833321 14.69 0.0833321 14V12.3334Z" fill="url(#paint9_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 36.9167C10.6433 36.9167 10.0833 36.3567 10.0833 35.6667C10.0833 34.9767 10.6433 34.4167 11.3333 34.4167H13C13.69 34.4167 14.25 34.9767 14.25 35.6667C14.25 36.3567 13.69 36.9167 13 36.9167H11.3333Z" fill="url(#paint10_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.4167 18.1667C33.4167 17.4767 33.9767 16.9167 34.6667 16.9167C35.3567 16.9167 35.9167 17.4767 35.9167 18.1667V19.8334C35.9167 20.5234 35.3567 21.0834 34.6667 21.0834C33.9767 21.0834 33.4167 20.5234 33.4167 19.8334V18.1667Z" fill="url(#paint11_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1667 3.58337C16.4767 3.58337 15.9167 3.02337 15.9167 2.33337C15.9167 1.64337 16.4767 1.08337 17.1667 1.08337H18.8333C19.5233 1.08337 20.0833 1.64337 20.0833 2.33337C20.0833 3.02337 19.5233 3.58337 18.8333 3.58337H17.1667Z" fill="url(#paint12_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0833321 18.1667C0.0833321 17.4767 0.643332 16.9167 1.33333 16.9167C2.02333 16.9167 2.58333 17.4767 2.58333 18.1667V19.8334C2.58333 20.5234 2.02333 21.0834 1.33333 21.0834C0.643332 21.0834 0.0833321 20.5234 0.0833321 19.8334V18.1667Z" fill="url(#paint13_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1667 36.9167C16.4767 36.9167 15.9167 36.3567 15.9167 35.6667C15.9167 34.9767 16.4767 34.4167 17.1667 34.4167H18.8333C19.5233 34.4167 20.0833 34.9767 20.0833 35.6667C20.0833 36.3567 19.5233 36.9167 18.8333 36.9167H17.1667Z" fill="url(#paint14_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.4167 24C33.4167 23.31 33.9767 22.75 34.6667 22.75C35.3567 22.75 35.9167 23.31 35.9167 24V25.6667C35.9167 26.3567 35.3567 26.9167 34.6667 26.9167C33.9767 26.9167 33.4167 26.3567 33.4167 25.6667V24Z" fill="url(#paint15_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23 3.58337C22.31 3.58337 21.75 3.02337 21.75 2.33337C21.75 1.64337 22.31 1.08337 23 1.08337H24.6667C25.3567 1.08337 25.9167 1.64337 25.9167 2.33337C25.9167 3.02337 25.3567 3.58337 24.6667 3.58337H23Z" fill="url(#paint16_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0833321 24C0.0833321 23.31 0.643332 22.75 1.33333 22.75C2.02333 22.75 2.58333 23.31 2.58333 24V25.6667C2.58333 26.3567 2.02333 26.9167 1.33333 26.9167C0.643332 26.9167 0.0833321 26.3567 0.0833321 25.6667V24Z" fill="url(#paint17_linear_353_3533)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23 36.9167C22.31 36.9167 21.75 36.3567 21.75 35.6667C21.75 34.9767 22.31 34.4167 23 34.4167H24.6667C25.3567 34.4167 25.9167 34.9767 25.9167 35.6667C25.9167 36.3567 25.3567 36.9167 24.6667 36.9167H23Z" fill="url(#paint18_linear_353_3533)" />
                 <defs>
-                  <clipPath id="clip0_353_3502">
-                    <rect width="30" height="30" />
-                  </clipPath>
+                  <linearGradient id="paint0_linear_353_3533" x1="31.75" y1="1.08337" x2="31.75" y2="9.41671" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_353_3533" x1="31.75" y1="28.5835" x2="31.75" y2="36.9168" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint2_linear_353_3533" x1="4.25" y1="1.08337" x2="4.25" y2="9.41671" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint3_linear_353_3533" x1="4.25" y1="28.5835" x2="4.25" y2="36.9168" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint4_linear_353_3533" x1="18" y1="6.08337" x2="18" y2="15.25" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint5_linear_353_3533" x1="10.9167" y1="17.75" x2="10.9167" y2="31.9167" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint6_linear_353_3533" x1="25.0833" y1="17.75" x2="25.0833" y2="31.9167" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint7_linear_353_3533" x1="34.6667" y1="11.0834" x2="34.6667" y2="15.25" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint8_linear_353_3533" x1="12.1667" y1="1.08337" x2="12.1667" y2="3.58337" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint9_linear_353_3533" x1="1.33333" y1="11.0834" x2="1.33333" y2="15.25" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint10_linear_353_3533" x1="12.1667" y1="34.4167" x2="12.1667" y2="36.9167" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint11_linear_353_3533" x1="34.6667" y1="16.9167" x2="34.6667" y2="21.0834" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint12_linear_353_3533" x1="18" y1="1.08337" x2="18" y2="3.58337" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint13_linear_353_3533" x1="1.33333" y1="16.9167" x2="1.33333" y2="21.0834" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint14_linear_353_3533" x1="18" y1="34.4167" x2="18" y2="36.9167" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint15_linear_353_3533" x1="34.6667" y1="22.75" x2="34.6667" y2="26.9167" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint16_linear_353_3533" x1="23.8333" y1="1.08337" x2="23.8333" y2="3.58337" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint17_linear_353_3533" x1="1.33333" y1="22.75" x2="1.33333" y2="26.9167" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
+                  <linearGradient id="paint18_linear_353_3533" x1="23.8333" y1="34.4167" x2="23.8333" y2="36.9167" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0054A1" />
+                    <stop offset="1" stop-color="#004586" />
+                  </linearGradient>
                 </defs>
               </svg>
               User Experience
@@ -569,7 +631,7 @@ const Home = () => {
           </button>
         </Container>
       </div>
-      <div className="home_product">
+      <div className="home_product" id="product">
         <Container>
           <h6>PRODUCTS</h6>
           <h4>
@@ -696,6 +758,7 @@ const Home = () => {
           </div>
         </Container>
       </div>
+
       <Partners />
       <Industries />
 
@@ -741,42 +804,30 @@ const Home = () => {
             </Col>
             <Col md={6} className="client_imgs">
               <Row>
-                <Col md={3}>
-                  {" "}
+                <Col md={3} xs={6}>
                   <img src="/images/client1.jpg" alt="" />
                 </Col>
-                <Col md={3}>
-                  {" "}
+                <Col md={3} xs={6}>
                   <img src="/images/client2.jpg" alt="" />
                 </Col>
-                <Col md={3}>
-                  {" "}
+                <Col md={3} xs={6}>
                   <img src="/images/client3.jpg" alt="" />
                 </Col>
-                <Col md={3}>
-                  {" "}
+                <Col md={3} xs={6}>
                   <img src="/images/client4.jpg" alt="" />
                 </Col>
               </Row>
               <Row>
-                <Col md={3}>
-                  {" "}
+                <Col md={3} xs={6}>
                   <img src="/images/client5.jpg" alt="" />
                 </Col>
-                <Col md={3}>
-                  {" "}
+                <Col md={3} xs={6}>
                   <img src="/images/client6.jpg" alt="" />
                 </Col>
-                <Col md={3}>
-                  {" "}
-                  <img
-                    src="/images/client7.jpg"
-                    alt=""
-                    style={{ width: "60px" }}
-                  />
+                <Col md={3} xs={6}>
+                  <img src="/images/client7.jpg" alt="" style={{ width: "60px" }} />
                 </Col>
-                <Col md={3}>
-                  {" "}
+                <Col md={3} xs={6}>
                   <img src="/images/client8.jpg" alt="" />
                 </Col>
               </Row>
@@ -799,7 +850,7 @@ const Home = () => {
 
           <div className="tech_languages">
             <Row className="justify-content-center" style={{ gap: "40px 0" }}>
-              <Col md={2}>
+              <Col md={2} xs={6}>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -816,7 +867,7 @@ const Home = () => {
                   <p>IOS</p>
                 </div>
               </Col>
-              <Col md={2}>
+              <Col md={2} xs={6}>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -833,7 +884,7 @@ const Home = () => {
                   <p>Android</p>
                 </div>
               </Col>
-              <Col md={2}>
+              <Col md={2} xs={6}>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -873,7 +924,7 @@ const Home = () => {
                   <p>React Native</p>
                 </div>
               </Col>
-              <Col md={2}>
+              <Col md={2} xs={6}>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -890,7 +941,7 @@ const Home = () => {
                   <p>Flutter</p>
                 </div>
               </Col>
-              <Col md={2}>
+              <Col md={2} xs={6}>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -914,7 +965,7 @@ const Home = () => {
                   <p>Ionic</p>
                 </div>
               </Col>
-              <Col md={2}>
+              <Col md={2} xs={6}>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -938,7 +989,7 @@ const Home = () => {
                   <p>Swift</p>
                 </div>
               </Col>
-              <Col md={2}>
+              <Col md={2} xs={6}>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -962,7 +1013,7 @@ const Home = () => {
                   <p>Kotlin</p>
                 </div>
               </Col>
-              <Col md={2}>
+              <Col md={2} xs={6}>
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

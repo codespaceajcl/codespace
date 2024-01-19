@@ -52,7 +52,7 @@ const Financial = () => {
           </h2>
 
           <Row className="mt-5">
-            <Col md={4}>
+            <Col md={4} sm={6}>
               <div className="detail_box">
                 <div>
                   <svg
@@ -71,7 +71,7 @@ const Financial = () => {
                 </h6>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={4} sm={6}>
               <div className="detail_box">
                 <div>
                   <svg
@@ -154,7 +154,7 @@ const Financial = () => {
                 </h6>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={4} sm={6}>
               <div className="detail_box">
                 <div>
                   <svg
@@ -234,7 +234,7 @@ const Financial = () => {
                 </h6>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={4} sm={6}>
               <div className="detail_box">
                 <div>
                   <svg
@@ -276,7 +276,7 @@ const Financial = () => {
                 </h6>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={4} sm={6}>
               <div className="detail_box">
                 <div>
                   <svg
@@ -358,7 +358,7 @@ const Financial = () => {
                 </h6>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={4} sm={6}>
               <div className="detail_box">
                 <div>
                   <svg
@@ -393,7 +393,7 @@ const Financial = () => {
                 </h6>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={4} sm={6}>
               <div className="detail_box">
                 <div>
                   <svg
@@ -424,7 +424,7 @@ const Financial = () => {
                 </h6>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={4} sm={6}>
               <div className="detail_box">
                 <div>
                   <svg
@@ -455,7 +455,7 @@ const Financial = () => {
                 </h6>
               </div>
             </Col>
-            <Col md={4}>
+            <Col md={4} sm={6}>
               <div className="detail_box">
                 <div>
                   <svg

@@ -61,6 +61,10 @@
   padding: 15px;
 }
 
+.financial_detail .detail_box div:hover {
+  box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 71%);
+}
+
 .financial_detail .detail_box div svg {
   width: 50px;
   height: 50px;
@@ -72,73 +76,127 @@
 }
 
 
-.about_help.financial_consult{
-    background-image: url('/public/images/financial_consult.jpg');
+.about_help.financial_consult {
+  background-image: url('/public/images/financial_consult.jpg');
 }
 
-.insurance_detail{
-    background: #222;
-    color: #fff;
+.insurance_detail {
+  background: #222;
+  color: #fff;
 }
 
-.insurance_detail h2{
-    color: #fff;
+.insurance_detail h2 {
+  color: #fff;
 }
 
-.insurance_consult{
-    background-image: url('/public/images/insurance_consult.jpg');
+.insurance_consult {
+  background-image: url('/public/images/insurance_consult.jpg');
 }
 
-.healthcare_detail{
-    background: #003366;
-    color: #fff;
+.healthcare_detail {
+  background: #003366;
+  color: #fff;
 }
 
-.healthcare_detail h2{
-    color: #fff;
+.healthcare_detail h2 {
+  color: #fff;
 }
 
-.healthcare_consult{
-    background-image: url('/public/images/healthcare_consult.jpg');
+.healthcare_consult {
+  background-image: url('/public/images/healthcare_consult.jpg');
 }
 
-.realestate_detail{
-    background-color: #0A2133;
-    color: #fff;
+.realestate_detail {
+  background-color: #0A2133;
+  color: #fff;
 }
 
-.realestate_detail h2{
-    color: #fff;
+.realestate_detail h2 {
+  color: #fff;
 }
 
-.realestate_consult{
-    background-image: url('/public/images/realestate_consult.jpg');
+.realestate_consult {
+  background-image: url('/public/images/realestate_consult.jpg');
 }
 
-.logistics_details{
-    background: #ECEEE4;
+.logistics_details {
+  background: #ECEEE4;
 }
 
-.logictics_consult{
-    background-image: url('/public/images/logistics_consult.jpg');
+.logictics_consult {
+  background-image: url('/public/images/logistics_consult.jpg');
 }
 
-.media_consult{
-    background-image: url('/public/images/media_consult.jpg');
+.media_consult {
+  background-image: url('/public/images/media_consult.jpg');
 }
 
-.media_details{
-    background: #F2F2F2;
+.media_details {
+  background: #F2F2F2;
 }
 
 .media_details .detail_box div {
-    background-color: #000;
+  background-color: #000;
 }
 
-.media_details svg path{
-    fill: #fff
+.media_details svg path {
+  fill: #fff
 }
 
-.media_consult svg{
-    fill: #fff;
+.media_consult svg {
+  fill: #fff;
+}
+
+@media (max-width: 767px) {
+  .financial_banner h1 {
+    font-size: 27px;
+  }
+
+  .financial_banner {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  .data_driven h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .data_driven ul li {
+    font-size: 18px;
+    margin-top: 17px;
+  }
+
+  .data_driven p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .financial_detail {
+    padding: 35px 0;
+  }
+
+  .financial_detail h2 {
+    font-size: 20px;
+  }
+
+  .financial_detail .detail_box {
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .financial_detail .detail_box div svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .financial_detail .detail_box h6 {
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .about_help{
+    padding: 45px 0;
+  }
 }

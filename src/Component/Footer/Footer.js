@@ -37,27 +37,28 @@ const Footer = () => {
             </Col>
             <Col md={6}>
               <Row>
-                <Col md={3}>
-                  <h6>About</h6>
+                <Col md={3} xs={6}>
+                  <h6>Links</h6>
                   <ul>
-                    <li>About us</li>
-                    <li>Blogs</li>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>About Us</li>
                     <li>Careers</li>
-                    <li>News Room</li>
-                    <li>Case Studies</li>
+                    <li>Contact Us</li>
+                  </ul>
+                </Col>
+                <Col md={4} xs={6}>
+                  <h6>Industries</h6>
+                  <ul>
+                    <li>Financial Services</li>
+                    <li>Insurance</li>
+                    <li>Health Care</li>
+                    <li>Telco & Media</li>
+                    <li>Real Estate</li>
+                    <li>Logistics</li>
                   </ul>
                 </Col>
                 <Col md={5}>
-                  <h6>Services</h6>
-                  <ul>
-                    <li>Digital Transformation</li>
-                    <li>Artificial Intelligence (AI)</li>
-                    <li>User Experience</li>
-                    <li>Business Analytics</li>
-                    <li>Web & Mobile Development</li>
-                  </ul>
-                </Col>
-                <Col md={4}>
                   <h6>Products</h6>
                   <ul>
                     <li>Warehouse Management</li>
@@ -71,21 +72,22 @@ const Footer = () => {
             </Col>
           </Row>
         </Container>
-      </div>
 
-      <div className="copy_rights">
-        <Container>
-          <div>
-            <p>© 2023-2024, Codespace - All Rights Reserved</p>
-          </div>
+        <div className="copy_rights">
+          <Container>
+            <div>
+              <p>© 2023-2024, Codespace - All Rights Reserved</p>
+            </div>
 
-          <div>
-            <img src="/images/fb_icon.png" alt="" />
-            <img src="/images/twitter_icon.png" alt="" />
-            <img src="/images/insta_icon.png" alt="" />
-            <img src="/images/linkdln_icon.png" alt="" />
-          </div>
-        </Container>
+            <div>
+              <img src="/images/fb_icon.png" alt="" />
+              <img src="/images/twitter_icon.png" alt="" />
+              <img src="/images/insta_icon.png" alt="" />
+              <img src="/images/linkdln_icon.png" alt="" />
+            </div>
+          </Container>
+        </div>
+
       </div>
     </>
   );

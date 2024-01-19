@@ -1,28 +1,28 @@
-.footer_main{
+.footer_main {
     background-image: url('/public/images/footer_bg.png');
     background-size: cover;
     padding-top: 45px;
     border-bottom: 1px solid #DFDFE0;
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
 }
 
-.footer_main img{
+.footer_main img {
     width: 230px;
 }
 
-.footer_main p{
+.footer_main p {
     color: #fff;
     margin: 25px 0;
     max-width: 550px;
 }
 
-.footer_main h6{
+.footer_main h6 {
     color: #A9C23F;
     font-size: 18px;
     font-weight: 700;
 }
 
-.footer_main ul{
+.footer_main ul {
     color: #fff;
     padding-left: 0;
     list-style-type: none;
@@ -32,61 +32,97 @@
 .footer_main ul li {
     margin-bottom: 14px;
     font-size: 15px;
+    cursor: pointer;
 }
 
-.personal_info{
+.footer_main ul li:hover {
+    color: #A9C23F;
+}
+
+.personal_info {
     display: flex;
     gap: 45px;
     margin-top: 45px;
 }
 
-.personal_info .phone{
+.personal_info .phone {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.personal_info .phone img{
-    width: 55px;
-    height: 55px;
+.personal_info .phone img {
+    width: 45px;
+    height: 45px;
     object-fit: contain;
 }
 
-.personal_info .phone h4{
+.personal_info .phone h4 {
     color: #fff;
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 4px;
 }
 
-.personal_info .phone h5{
+.personal_info .phone h5 {
     color: #fff;
     font-size: 17px;
 }
 
-.copy_rights{
-    background-image: url('/public/images/footer_bg.png');
-    background-size: cover;
+.copy_rights {
+    /* background-image: url('/public/images/footer_bg.png'); */
+    /* background-size: cover; */
     padding: 20px 0;
 }
 
-.copy_rights .container{
+.copy_rights .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.copy_rights p{
+.copy_rights p {
     color: #fff;
 }
 
-.copy_rights .container div{
+.copy_rights .container div {
     display: flex;
     gap: 20px;
 }
 
-.copy_rights .container div img{
+.copy_rights .container div img {
     cursor: pointer;
     width: 22px;
     height: 22px;
     object-fit: contain;
+}
+
+@media (max-width: 767px) {
+
+    .footer_main{
+        background-size: contain;
+    }
+
+    .copy_rights .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copy_rights{
+        padding: 0px 0 25px 0;
+        border-top: 1px solid #fff;
+    }
+
+    .footer_main p {
+        margin: 20px 0 10px;
+        font-size: 15px;
+    }
+
+    .copy_rights .container div img{
+        width: 18px;
+        height: 18px;
+    }
 }

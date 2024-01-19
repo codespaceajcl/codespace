@@ -5,6 +5,7 @@
     padding: 0;
     z-index: 5;
     transition: background-color 0.3s ease;
+    padding: 10px 0;
 }
 
 .header_main.black_main{
@@ -32,10 +33,49 @@
 
 .header_main .navbar-nav .nav-link{
     color: #F9F9F9;
-    font-size: 16px;
+    font-size: 17px;
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 5px;
+    text-transform: capitalize;
+}
+
+.nav-link.dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+    list-style-type: none;
+    left: 0;
+}
+
+.nav-link.dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+    padding: 12px 0px;
+    font-weight: 500;
+}
+
+.nav-link.dropdown > ul li{
+    color: #787878;
+    padding: 5px 10px;
+    font-weight: 500;
+    min-width: 240px;
+    border-bottom: 1px solid #d0d0d082;
+}
+
+.nav-link.dropdown > ul li:hover{
+    background-color: #e6e6e654;
 }
 
 .header_main .navbar-nav{
@@ -67,12 +107,74 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    padding: 6px 15px;
+    padding: 7px 22px;
     border-radius: 100px;
+    transition: all 0.2s ease;
+    font-weight: 400;
 }
 
 .header_main.black_main .header_contact_us button{
     border: 1px solid #000;
     color: #000;
     font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.header_main.black_main .header_contact_us button:hover{
+    background-color: #000;
+    color: #F9F9F9;
+}
+
+.header_main .header_contact_us button:hover{
+    background-color: #F9F9F9;
+    border: 1px solid #000;
+    color: #000;
+}
+
+@media (max-width: 992px) {
+    .header_main.black_main span.navbar-toggler-icon{
+        background-image: url('/public/images/toggler_black.png');
+    }
+
+    span.navbar-toggler-icon{
+        background-image: url('/public/images/toggler.png');
+    }
+
+    button:focus:not(:focus-visible){
+        box-shadow: none;
+    }
+
+    .navbar-toggler{
+        border: none;
+    }
+
+    .core_values .col-md-3.col-md-3 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .header_main .navbar-brand img{
+        width: 165px;
+    }
+
+    .navbar-collapse{
+        background-color: #000;
+    }
+
+    .header_main.black_main .navbar-collapse{
+        background-color: #fff;
+    }
+
+    .header_main .navbar-nav {
+        gap: 5px;
+        align-items: start;
+        padding: 15px;
+    }
+
+    .header_main{
+        border: none;
+    }
 }

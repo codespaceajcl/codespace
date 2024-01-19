@@ -3,8 +3,11 @@ import { Col, Container, Row } from "react-bootstrap";
 import Newsletter from "../../Component/Newsletter/Newsletter";
 import Partners from "../../Component/Partners/Partners";
 import "./Industry.css";
+import { useNavigate } from "react-router-dom";
 
 const Industry = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="industry_main">
       <div className="industry_banner">
@@ -36,37 +39,37 @@ const Industry = () => {
 
           <Row>
             <Col md={4}>
-              <div className="innovation_box">
+              <div className="innovation_box" onClick={() => navigate('/industries/financial')}>
                 <img src="/images/innovation1.jpg" alt="" />
                 <h3>Financial Services</h3>
               </div>
             </Col>
             <Col md={4}>
-              <div className="innovation_box">
+              <div className="innovation_box" onClick={() => navigate('/industries/insurance')}>
                 <img src="/images/innovation2.jpg" alt="" />
                 <h3>Insurance</h3>
               </div>
             </Col>
             <Col md={4}>
-              <div className="innovation_box">
+              <div className="innovation_box" onClick={() => navigate('/industries/healthcare')}>
                 <img src="/images/innovation3.jpg" alt="" />
                 <h3>Health Care</h3>
               </div>
             </Col>
             <Col md={4}>
-              <div className="innovation_box">
+              <div className="innovation_box" onClick={() => navigate('/industries/media')}>
                 <img src="/images/innovation4.jpg" alt="" />
                 <h3>Telco & Media</h3>
               </div>
             </Col>
             <Col md={4}>
-              <div className="innovation_box">
+              <div className="innovation_box" onClick={() => navigate('/industries/real-estate')}>
                 <img src="/images/innovation5.jpg" alt="" />
-                <h3>Real State</h3>
+                <h3>Real Estate</h3>
               </div>
             </Col>
             <Col md={4}>
-              <div className="innovation_box">
+              <div className="innovation_box" onClick={() => navigate('/industries/logistics')}>
                 <img src="/images/innovation6.jpg" alt="" />
                 <h3>Logistics</h3>
               </div>
