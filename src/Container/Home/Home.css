@@ -1,5 +1,5 @@
 .main_home {
-  background-image: url("/public/images/home_banner_bg.png");
+  background-image: url("../../images/home_banner_bg.png");
   /* min-height: 100vh; */
   background-size: cover;
   padding-top: 90px;
@@ -384,7 +384,7 @@
 
 .home_featured {
   background-color: #131415;
-  background-image: url("/public/images/feature_bg.png");
+  background-image: url("../../images/feature_bg.png");
   background-size: 100% 100%;
   padding: 70px 0;
   width: 100%;
@@ -562,7 +562,7 @@
 }
 
 .home_product .product_main_wrap .product_inner .slick-prev.prev_arrow {
-  background-image: url("/public/images/product_arrow_left.png") !important;
+  background-image: url("../../images/product_arrow_left.png") !important;
   width: 45px;
   height: 45px;
   background-size: cover;
@@ -580,7 +580,7 @@
 }
 
 .home_product .product_main_wrap .product_inner .slick-next.next_arrow {
-  background-image: url("/public/images/product_arrow_right.png") !important;
+  background-image: url("../../images/product_arrow_right.png") !important;
   width: 45px;
   height: 45px;
   background-size: cover !important;
@@ -679,7 +679,7 @@
 }
 
 .home_industries .industry_slider .industry_box {
-  background-image: url("/public/images/industry1.jpg");
+  background-image: url("../../images/industry1.jpg");
   width: 100%;
   padding: 25px;
   height: 280px;
@@ -688,27 +688,27 @@
 }
 
 .home_industries .industry_slider .industry_box.ind1 {
-  background-image: url('/public/images/innovation1.jpg');
+  background-image: url('../../images/innovation1.jpg');
 }
 
 .home_industries .industry_slider .industry_box.ind2 {
-  background-image: url('/public/images/innovation2.jpg');
+  background-image: url('../../images/innovation2.jpg');
 }
 
 .home_industries .industry_slider .industry_box.ind3 {
-  background-image: url('/public/images/innovation3.jpg');
+  background-image: url('../../images/innovation3.jpg');
 }
 
 .home_industries .industry_slider .industry_box.ind4 {
-  background-image: url('/public/images/innovation4.jpg');
+  background-image: url('../../images/innovation4.jpg');
 }
 
 .home_industries .industry_slider .industry_box.ind5 {
-  background-image: url('/public/images/innovation5.jpg');
+  background-image: url('../../images/innovation5.jpg');
 }
 
 .home_industries .industry_slider .industry_box.ind6 {
-  background-image: url('/public/images/innovation6.jpg');
+  background-image: url('../../images/innovation6.jpg');
 }
 
 .home_industries .industry_slider .industry_box::before {
@@ -790,7 +790,7 @@
 }
 
 .home_industries .industry_slider .slick-slider .slick-prev.ind_prev_arrow {
-  background-image: url("/public/images/product_arrow_left.png") !important;
+  background-image: url("../../images/product_arrow_left.png") !important;
   width: 45px;
   height: 45px;
   background-size: cover;
@@ -825,7 +825,7 @@
 }
 
 .home_industries .industry_slider .slick-slider .slick-next.ind_next_arrow {
-  background-image: url("/public/images/product_arrow_right.png") !important;
+  background-image: url("../../images/product_arrow_right.png") !important;
   width: 45px;
   height: 45px;
   background-size: cover !important;

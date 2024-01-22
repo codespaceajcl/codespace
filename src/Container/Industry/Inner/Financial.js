@@ -2,6 +2,7 @@ import React from "react";
 import "./Inner.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Industries from "../../../Component/Industries/Industries";
+import financialBanner from "../../../images/financial_banner.jpg";
 
 const Financial = () => {
   return (
@@ -12,7 +13,7 @@ const Financial = () => {
             Leading the Way in Revolutionizing the Financial Services Sector
           </h1>
         </Container>
-        <img src="/images/financial_banner.jpg" alt="" />
+        <img src={financialBanner} alt="" />
       </div>
 
       <div className="data_driven">

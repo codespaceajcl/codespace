@@ -2,6 +2,7 @@ import React from "react";
 import "./Inner.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Industries from "../../../Component/Industries/Industries";
+import mediaBanner from "../../../images/media_banner.jpg";
 
 const Media = () => {
   return (
@@ -12,7 +13,7 @@ const Media = () => {
             Innovative Solutions for Telco and Media <br /> Excellence
           </h1>
         </Container>
-        <img src="/images/media_banner.jpg" alt="" />
+        <img src={mediaBanner} alt="" />
       </div>
 
       <div className="data_driven">

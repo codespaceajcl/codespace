@@ -1,5 +1,5 @@
 .industry_main .industry_banner {
-  background-image: url("/public/images/industry_banner_bg.png");
+  background-image: url("../../images/industry_banner_bg.png");
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 90px;
@@ -76,7 +76,7 @@
 }
 
 .about_help.schedule_consult{
-    background-image: url('/public/images/consult.jpg');
+    background-image: url('../../images/consult.jpg');
 }
 
 @media (max-width: 1200px) {

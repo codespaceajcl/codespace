@@ -1,5 +1,5 @@
 .about_main .about_banner {
-  background-image: url("/public/images/about_banner_bg.jpg");
+  background-image: url("../../images/about_banner_bg.jpg");
   background-size: cover;
   padding-top: 90px;
   padding-bottom: 50px;
@@ -88,7 +88,7 @@
 
 .about_help {
   background-color: #131415;
-  background-image: url("/public/images/help_work.jpg");
+  background-image: url("../../images/help_work.jpg");
   background-size: 100% 100%;
   padding: 70px 0;
   width: 100%;
@@ -225,7 +225,7 @@
 }
 
 .news_insights .slick-slider .slick-prev.news_prev_arrow {
-  background-image: url("/public/images/product_arrow_left.png") !important;
+  background-image: url("../../images/product_arrow_left.png") !important;
   width: 45px;
   height: 45px;
   background-size: cover;
@@ -255,7 +255,7 @@
 }
 
 .news_insights .slick-slider .slick-next.news_next_arrow {
-  background-image: url("/public/images/product_arrow_right.png") !important;
+  background-image: url("../../images/product_arrow_right.png") !important;
   width: 45px;
   height: 45px;
   background-size: cover !important;
@@ -324,7 +324,7 @@
 }
 
 .leadership .slick-slider .slick-prev.leader_prev_arrow {
-  background-image: url("/public/images/product_arrow_left.png") !important;
+  background-image: url("../../images/product_arrow_left.png") !important;
   width: 45px;
   height: 45px;
   background-size: cover;
@@ -354,7 +354,7 @@
 }
 
 .leadership .slick-slider .slick-next.leader_next_arrow {
-  background-image: url("/public/images/product_arrow_right.png") !important;
+  background-image: url("../../images/product_arrow_right.png") !important;
   width: 45px;
   height: 45px;
   background-size: cover !important;

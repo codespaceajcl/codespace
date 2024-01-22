@@ -2,6 +2,7 @@ import React from "react";
 import "./Inner.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Industries from "../../../Component/Industries/Industries";
+import logisticsBanner from "../../../images/logistics_banner.jpg";
 
 const Logistics = () => {
   return (
@@ -12,7 +13,7 @@ const Logistics = () => {
             Efficiency Redefined: Transforming Logistics <br /> with Code space
           </h1>
         </Container>
-        <img src="/images/logistics_banner.jpg" alt="" />
+        <img src={logisticsBanner} alt="" />
       </div>
 
       <div className="data_driven">

@@ -43,7 +43,7 @@ const App = () => {
   );
 
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/codespace">
       <ScrollToTop />
       <Routes>
         {HomeLayout}

@@ -1,6 +1,13 @@
 import React from "react";
 import "./Footer.css";
 import { Col, Container, Row } from "react-bootstrap";
+import mainLogo from "../../images/main_logo.png";
+import phoneIcon from "../../images/phone_icon.png";
+import emailIcon from "../../images/email_icon.png";
+import fbIcon from "../../images/fb_icon.png";
+import twitterIcon from "../../images/twitter_icon.png";
+import instaIcon from "../../images/insta_icon.png";
+import linkdlnIcon from "../../images/linkdln_icon.png";
 
 const Footer = () => {
   return (
@@ -9,7 +16,7 @@ const Footer = () => {
         <Container>
           <Row>
             <Col md={6}>
-              <img src="/images/main_logo.png" alt="" />
+              <img src={mainLogo} alt="" />
               <p>
                 Codespace was founded in 12 years by a group of AJCL with a
                 vision to create innovative solutions that empower businesses of
@@ -20,14 +27,14 @@ const Footer = () => {
 
               <div className="personal_info">
                 <div className="phone">
-                  <img src="/images/phone_icon.png" alt="" />
+                  <img src={phoneIcon} alt="" />
                   <div>
                     <h4>Have a question?</h4>
                     <h5>(021) 111 252 575</h5>
                   </div>
                 </div>
                 <div className="phone">
-                  <img src="/images/email_icon.png" alt="" />
+                  <img src={emailIcon} alt="" />
                   <div>
                     <h4>Contact us at</h4>
                     <h5>contact@codespace.com</h5>
@@ -80,17 +87,15 @@ const Footer = () => {
             </div>
 
             <div>
-              <img src="/images/fb_icon.png" alt="" />
-              <img src="/images/twitter_icon.png" alt="" />
-              <img src="/images/insta_icon.png" alt="" />
-              <img src="/images/linkdln_icon.png" alt="" />
+              <img src={fbIcon} alt="" />
+              <img src={twitterIcon} alt="" />
+              <img src={instaIcon} alt="" />
+              <img src={linkdlnIcon} alt="" />
             </div>
           </Container>
         </div>
-
       </div>
     </>
   );
 };
-
 export default Footer;

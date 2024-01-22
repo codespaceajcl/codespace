@@ -2,6 +2,7 @@ import React from "react";
 import "./Inner.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Industries from "../../../Component/Industries/Industries";
+import healthcareBanner from "../../../images/healthcare_banner.jpg";
 
 const Healthcare = () => {
   return (
@@ -12,7 +13,7 @@ const Healthcare = () => {
             Revolutionizing the Healthcare <br /> Sector
           </h1>
         </Container>
-        <img src="/images/healthcare_banner.jpg" alt="" />
+        <img src={healthcareBanner} alt="" />
       </div>
 
       <div className="data_driven">

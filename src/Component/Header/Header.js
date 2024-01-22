@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Nav, Container, Navbar, NavDropdown } from "react-bootstrap";
 import { MdSearch, MdOutlineArrowOutward } from "react-icons/md";
-import "./Header.css";
 import { useLocation, useNavigate } from "react-router-dom";
+import mainLogo from "../../images/main_logo.png";
+import "./Header.css";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -37,7 +38,7 @@ const Header = () => {
     <Navbar expand="lg" className={`header_main ${scrolled ? 'scrolled' : ''}`}>
       <Container>
         <Navbar.Brand onClick={() => navigate("/")}>
-          <img src="/images/main_logo.png" alt="" />
+          <img src={mainLogo} alt="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -53,7 +54,7 @@ const Header = () => {
             <Nav.Link onClick={() => navigateAndCloseNavbar("/")}>
               Home
             </Nav.Link>
-            <Nav.Link href="/#services"> Services </Nav.Link>
+            <Nav.Link> Services </Nav.Link>
 
             <Nav.Link className="dropdown">
               <span onClick={() => navigateAndCloseNavbar("/industries")}>Industries</span>
@@ -71,7 +72,7 @@ const Header = () => {
               </ul>
             </Nav.Link>
 
-            <Nav.Link href={'/#product'}> Products </Nav.Link>
+            <Nav.Link> Products </Nav.Link>
 
             {/* <NavDropdown title="Industries" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

@@ -3,6 +3,18 @@ import "./About.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Newsletter from "../../Component/Newsletter/Newsletter";
 import Slider from "react-slick";
+import aboutBanner from "../../images/about_banner.jpg";
+import companyRights from "../../images/our_company_right.jpg";
+import value1 from "../../images/value1.png";
+import value2 from "../../images/value2.png";
+import value3 from "../../images/value3.png";
+import leader1 from "../../images/leader1.png";
+import leader2 from "../../images/leader2.png";
+import leader3 from "../../images/leader3.png";
+import leader4 from "../../images/leader4.png";
+import news1 from "../../images/news1.jpg";
+import news2 from "../../images/news2.jpg";
+import news3 from "../../images/news3.jpg";
 
 const About = () => {
   function SampleNextArrow(props) {
@@ -132,7 +144,7 @@ const About = () => {
               </p>
             </Col>
             <Col md={5}>
-              <img src="/images/about_banner.jpg" alt="" />
+              <img src={aboutBanner} alt="" />
             </Col>
           </Row>
         </Container>
@@ -190,7 +202,7 @@ const About = () => {
               </ul>
             </Col>
             <Col md={6}>
-              <img src="/images/our_company_right.jpg" alt="" />
+              <img src={companyRights} alt="" />
             </Col>
           </Row>
         </Container>
@@ -207,7 +219,7 @@ const About = () => {
           <Row className="my-5">
             <Col md={3}>
               <div className="value_box">
-                <img src="/images/value1.png" alt="" />
+                <img src={value1} alt="" />
                 <h3>Think Big.</h3>
                 <h6>
                   We are inventors who give each other the time, the space, and
@@ -217,7 +229,7 @@ const About = () => {
             </Col>
             <Col md={3}>
               <div className="value_box">
-                <img src="/images/value1.png" alt="" />
+                <img src={value1} alt="" />
                 <h3>Build Trust</h3>
                 <h6>
                   We are inventors who give each other the time, the space, and
@@ -227,7 +239,7 @@ const About = () => {
             </Col>
             <Col md={3}>
               <div className="value_box">
-                <img src="/images/value2.png" alt="" />
+                <img src={value2} alt="" />
                 <h3>Work Smart</h3>
                 <h6>
                   We are inventors who give each other the time, the space, and
@@ -237,7 +249,7 @@ const About = () => {
             </Col>
             <Col md={3}>
               <div className="value_box">
-                <img src="/images/value3.png" alt="" />
+                <img src={value3} alt="" />
                 <h3>Be Open</h3>
                 <h6>
                   We are inventors who give each other the time, the space, and
@@ -258,7 +270,7 @@ const About = () => {
             <Slider {...settings2}>
               <Col md={3}>
                 <div className="leader_box">
-                  <img src="/images/leader1.png" alt="" />
+                  <img src={leader1} alt="" />
 
                   <div>
                     <h3>Omer Jaffer</h3>
@@ -290,7 +302,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="leader_box">
-                  <img src="/images/leader2.png" alt="" />
+                  <img src={leader2} alt="" />
 
                   <div>
                     <h3>Rameez Loan</h3>
@@ -322,7 +334,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="leader_box">
-                  <img src="/images/leader3.png" alt="" />
+                  <img src={leader3} alt="" />
 
                   <div>
                     <h3>Amjad Ghumro</h3>
@@ -354,7 +366,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="leader_box">
-                  <img src="/images/leader4.png" alt="" />
+                  <img src={leader4} alt="" />
 
                   <div>
                     <h3>Sohaib Akram</h3>
@@ -386,7 +398,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="leader_box">
-                  <img src="/images/leader1.png" alt="" />
+                  <img src={leader1} alt="" />
 
                   <div>
                     <h3>Omer Jaffer</h3>
@@ -430,7 +442,7 @@ const About = () => {
             <Slider {...settings}>
               <Col md={4}>
                 <div className="news_box">
-                  <img src="/images/news1.jpg" alt="" />
+                  <img src={news1} alt="" />
                   <h5>New Year Celebration at AJCL Head Office Karachi.</h5>
 
                   <div>
@@ -469,7 +481,7 @@ const About = () => {
               </Col>
               <Col md={4}>
                 <div className="news_box">
-                  <img src="/images/news2.jpg" alt="" />
+                  <img src={news2} alt="" />
                   <h5>
                     Contract signed between FBR and AJCL consortium for Track
                     and Trace System.
@@ -511,7 +523,7 @@ const About = () => {
               </Col>
               <Col md={4}>
                 <div className="news_box">
-                  <img src="/images/news3.jpg" alt="" />
+                  <img src={news3} alt="" />
                   <h5>Blood Donation Drive at AJCL Head Office Karachi</h5>
 
                   <div>
@@ -550,7 +562,7 @@ const About = () => {
               </Col>
               <Col md={4}>
                 <div className="news_box">
-                  <img src="/images/news1.jpg" alt="" />
+                  <img src={news1} alt="" />
                   <h5>New Year Celebration at AJCL Head Office Karachi.</h5>
 
                   <div>

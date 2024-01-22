@@ -1,5 +1,5 @@
 .footer_main {
-    background-image: url('/public/images/footer_bg.png');
+    background-image: url('../../images/footer_bg.png');
     background-size: cover;
     padding-top: 45px;
     border-bottom: 1px solid #DFDFE0;
@@ -99,7 +99,7 @@
 
 @media (max-width: 767px) {
 
-    .footer_main{
+    .footer_main {
         background-size: contain;
     }
 
@@ -111,7 +111,7 @@
         align-items: center;
     }
 
-    .copy_rights{
+    .copy_rights {
         padding: 0px 0 25px 0;
         border-top: 1px solid #fff;
     }
@@ -121,7 +121,7 @@
         font-size: 15px;
     }
 
-    .copy_rights .container div img{
+    .copy_rights .container div img {
         width: 18px;
         height: 18px;
     }

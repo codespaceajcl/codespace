@@ -2,6 +2,7 @@ import React from "react";
 import "./Inner.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Industries from "../../../Component/Industries/Industries";
+import realestateBanner from "../../../images/realestate_banner.jpg";
 
 const RealEstate = () => {
   return (
@@ -12,7 +13,7 @@ const RealEstate = () => {
             Elevate Real Estate Experiences with <br /> Codespace
           </h1>
         </Container>
-        <img src="/images/realestate_banner.jpg" alt="" />
+        <img src={realestateBanner} alt="" />
       </div>
 
       <div className="data_driven">

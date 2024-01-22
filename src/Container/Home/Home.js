@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, Suspense } from "react";
 import "./Home.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { MdOutlineArrowOutward } from "react-icons/md";
@@ -10,6 +10,22 @@ import Partners from "../../Component/Partners/Partners";
 import Industries from "../../Component/Industries/Industries";
 import CountUp from 'react-countup';
 import { useNavigate } from "react-router-dom";
+import clutchReview from "../../images/clutch_review.png";
+import googleReview from "../../images/google_review.png";
+import cubicImg from "../../images/cubic_img.png";
+import homeAbout1 from "../../images/home_about1.jpg";
+import homeAbout2 from "../../images/home_about2.jpg";
+import homeAbout3 from "../../images/home_about3.jpg";
+import homeAbout4 from "../../images/home_about4.jpg";
+import productImg1 from "../../images/product_img1.png";
+import client1 from "../../images/client1.jpg";
+import client2 from "../../images/client2.jpg";
+import client3 from "../../images/client3.jpg";
+import client4 from "../../images/client4.jpg";
+import client5 from "../../images/client5.jpg";
+import client6 from "../../images/client6.jpg";
+import client7 from "../../images/client7.jpg";
+import client8 from "../../images/client8.jpg";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -81,12 +97,18 @@ const Home = () => {
                   </div>
 
                   <div className="reviews">
-                    <img src="/images/clutch_review.png" alt="" />
-                    <img src="/images/google_review.png" alt="" />
+                    <img src={clutchReview} alt="" />
+                    <img src={googleReview} alt="" />
                   </div>
                 </Col>
                 <Col md={5} className="home_right_img">
-                  <img src="/images/cubic_img.png" alt="" />
+                  <img src={cubicImg} alt="" />
+
+                  {/* <Suspense fallback={<img src="/images/cubic_img.png" alt="" />}>
+                    <Spline className="spline"
+                      scene="https://prod.spline.design/rAcSdllYWQWQDZLh/scene.splinecode" />
+                  </Suspense> */}
+
                   {/* <Spline
                     className="spline"
                     scene="https://prod.spline.design/rAcSdllYWQWQDZLh/scene.splinecode"
@@ -113,16 +135,17 @@ const Home = () => {
                   </div>
 
                   <div className="reviews">
-                    <img src="/images/clutch_review.png" alt="" />
-                    <img src="/images/google_review.png" alt="" />
+                    <img src={clutchReview} alt="" />
+                    <img src={googleReview} alt="" />
                   </div>
                 </Col>
                 <Col md={5} className="home_right_img">
-                  <img src="/images/cubic_img.png" alt="" />
-                  {/* <Spline
-                    className="spline"
-                    scene="https://prod.spline.design/rAcSdllYWQWQDZLh/scene.splinecode"
-                  /> */}
+                  <img src={cubicImg} alt="" />
+
+                  {/* <Suspense fallback={<img src="/images/cubic_img.png" alt="" />}>
+                    <Spline className="spline"
+                      scene="https://prod.spline.design/rAcSdllYWQWQDZLh/scene.splinecode" />
+                  </Suspense> */}
                 </Col>
               </Row>
             </div>
@@ -233,25 +256,25 @@ const Home = () => {
                     <p>
                       Innovative <br /> approach
                     </p>
-                    <img src="/images/home_about1.jpg" alt="" />
+                    <img src={homeAbout1} alt="" />
                   </div>
                   <div className="about_box">
                     <p>
                       Client-centric <br /> services
                     </p>
-                    <img src="/images/home_about2.jpg" alt="" />
+                    <img src={homeAbout2} alt="" />
                   </div>
                   <div className="about_box">
                     <p>
                       Skilled team <br /> members
                     </p>
-                    <img src="/images/home_about3.jpg" alt="" />
+                    <img src={homeAbout3} alt="" />
                   </div>
                   <div className="about_box">
                     <p>
                       Cutting-Edge <br /> technologies
                     </p>
-                    <img src="/images/home_about4.jpg" alt="" />
+                    <img src={homeAbout4} alt="" />
                   </div>
                 </Col>
               </Row>
@@ -693,7 +716,7 @@ const Home = () => {
                       </button>
                     </Col>
                     <Col md={6}>
-                      <img src="/images/product_img1.png" alt="" />
+                      <img src={productImg1} alt="" />
                     </Col>
                   </Row>
                 </div>
@@ -749,7 +772,7 @@ const Home = () => {
                       </button>
                     </Col>
                     <Col md={6}>
-                      <img src="/images/product_img1.png" alt="" />
+                      <img src={productImg1} alt="" />
                     </Col>
                   </Row>
                 </div>
@@ -805,30 +828,30 @@ const Home = () => {
             <Col md={6} className="client_imgs">
               <Row>
                 <Col md={3} xs={6}>
-                  <img src="/images/client1.jpg" alt="" />
+                  <img src={client1} alt="" />
                 </Col>
                 <Col md={3} xs={6}>
-                  <img src="/images/client2.jpg" alt="" />
+                  <img src={client2} alt="" />
                 </Col>
                 <Col md={3} xs={6}>
-                  <img src="/images/client3.jpg" alt="" />
+                  <img src={client3} alt="" />
                 </Col>
                 <Col md={3} xs={6}>
-                  <img src="/images/client4.jpg" alt="" />
+                  <img src={client4} alt="" />
                 </Col>
               </Row>
               <Row>
                 <Col md={3} xs={6}>
-                  <img src="/images/client5.jpg" alt="" />
+                  <img src={client5} alt="" />
                 </Col>
                 <Col md={3} xs={6}>
-                  <img src="/images/client6.jpg" alt="" />
+                  <img src={client6} alt="" />
                 </Col>
                 <Col md={3} xs={6}>
-                  <img src="/images/client7.jpg" alt="" style={{ width: "60px" }} />
+                  <img src={client7} alt="" style={{ width: "60px" }} />
                 </Col>
                 <Col md={3} xs={6}>
-                  <img src="/images/client8.jpg" alt="" />
+                  <img src={client8} alt="" />
                 </Col>
               </Row>
             </Col>
