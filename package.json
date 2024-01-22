@@ -1,6 +1,7 @@
 {
   "name": "codespace",
   "version": "0.1.0",
+  "homepage": "https://codespaceajcl.github.io/codespace/",
   "private": false,
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
